@@ -1,0 +1,71 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: $color-grey-dark;
+  line-height: 1.7;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  margin: 6rem;
+
+  &--main {
+    font-size: 6rem;
+    font-weight: 40rem;
+    letter-spacing: 3.5rem;
+    display: block;
+    animation: moveInLeft 1.5s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
+  }
+
+  &--sub {
+    font-weight: 40rem;
+    font-size: 2rem;
+    letter-spacing: 1.75rem;
+    display: block;
+    animation: moveInRight 1.5s ease-out;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient($color-primary-light, $color-primary-dark);
+  display: inline-block;
+  background-clip: text;
+  color: transparent;
+  transition: all .2s;
+
+  @include respond(tab-portrait) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
+  &:hover {
+      transform: skewY(10deg) skewX(10deg) scale(1.1);
+      text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
