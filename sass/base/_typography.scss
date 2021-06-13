@@ -1,5 +1,5 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   color: $color-grey-dark;
   line-height: 1.7;
@@ -38,9 +38,9 @@ body {
   font-weight: 700;
   background-image: linear-gradient($color-primary-light, $color-primary-dark);
   display: inline-block;
-  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
-  transition: all .2s;
+  transition: all 0.2s;
 
   @include respond(tab-portrait) {
     font-size: 3rem;
@@ -51,8 +51,8 @@ body {
   }
 
   &:hover {
-      transform: skewY(10deg) skewX(10deg) scale(1.1);
-      text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    transform: skewY(10deg) skewX(10deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
   }
 }
 
