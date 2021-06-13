@@ -547,6 +547,10 @@ body {
     @media (max-width: 75em) {
       .popup__content {
         width: 80%; } }
+    @media (max-width: 37.5em) {
+      .popup__content {
+        display: block;
+        height: 70%; } }
   .popup__left {
     width: 33.3333333%;
     float: left;
@@ -557,6 +561,10 @@ body {
     @media (max-width: 56.25em) {
       .popup__left {
         float: top; } }
+    @media (max-width: 37.5em) {
+      .popup__left {
+        display: flex;
+        width: 100%; } }
   .popup__right {
     width: 66.6666666%;
     float: left;
@@ -569,6 +577,10 @@ body {
     @media (max-width: 56.25em) {
       .popup__right {
         float: top; } }
+    @media (max-width: 37.5em) {
+      .popup__right {
+        display: block;
+        width: 100%; } }
   .popup__img {
     display: block;
     width: 100%; }
@@ -699,7 +711,7 @@ body {
       max-width: 50rem;
       padding: 0 3rem; } }
   .row::after {
-    content: "";
+    content: '';
     display: table;
     clear: both; }
   .row [class^="col-"] {

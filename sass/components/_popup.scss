@@ -63,6 +63,11 @@
     @include respond(tab-landscape) {
       width: 80%;
     }
+
+    @include respond(phone) {
+      display: block;
+      height: 70%;
+    }
   }
 
   &__left {
@@ -76,6 +81,11 @@
 
     @include respond(tab-portrait) {
       float: top;
+    }
+
+    @include respond(phone) {
+      display: flex;
+      width: 100%;
     }
   }
 
@@ -92,6 +102,11 @@
 
     @include respond(tab-portrait) {
       float: top;
+    }
+
+    @include respond(phone) {
+      display: block;
+      width: 100%;
     }
   }
 
