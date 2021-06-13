@@ -549,8 +549,9 @@ body {
         width: 80%; } }
     @media (max-width: 37.5em) {
       .popup__content {
-        display: block;
-        height: 70%; } }
+        height: 80%;
+        display: flex;
+        flex-direction: column; } }
   .popup__left {
     width: 33.3333333%;
     float: left;
@@ -563,8 +564,9 @@ body {
         float: top; } }
     @media (max-width: 37.5em) {
       .popup__left {
+        width: 100%;
         display: flex;
-        width: 100%; } }
+        flex-direction: row; } }
   .popup__right {
     width: 66.6666666%;
     float: left;
@@ -579,8 +581,8 @@ body {
         float: top; } }
     @media (max-width: 37.5em) {
       .popup__right {
-        display: block;
-        width: 100%; } }
+        width: 100%;
+        padding: 1rem 3rem; } }
   .popup__img {
     display: block;
     width: 100%; }
